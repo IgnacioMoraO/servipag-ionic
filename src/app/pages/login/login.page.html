@@ -1,0 +1,97 @@
+<ion-app>
+  <ion-menu side="start" content-id="main-content">
+    <ion-header>
+      <ion-toolbar translucent>
+        <ion-img src="assets/icon/servipagLogos.png" id="img-logo" class="ion-align-self-center"></ion-img>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item>
+          <ion-icon name="mail" slot="start"></ion-icon>
+          <ion-label>Inicio</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="paper-plane" slot="start"></ion-icon>
+          <ion-label>Autopistas</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="heart" slot="start"></ion-icon>
+          <ion-label>Recargas</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="archive" slot="start"></ion-icon>
+          <ion-label>¿Como funciona?</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <div class="ion-page" id="main-content">
+
+    <ion-row>
+
+      <ion-header class="ion-no-border">
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+          </ion-buttons>
+          <ion-img src="assets/icon/servipagLogos.png" id="img-main-logo"></ion-img>
+        </ion-toolbar>
+      </ion-header>
+
+
+
+      <ion-col size="10" offset="1">
+
+        <div class="label-titulo1" style="font-size:12px">
+          <ion-label>
+            Tus cuentas de siempre, como nunca antes.
+          </ion-label>
+        </div>
+
+        <div class="label-titulo2" style="font-size:11px">
+          <ion-label>
+            Utiliza tus datos ingresados en Servipag.com
+          </ion-label>
+        </div>
+
+        <div class="ion-align-self-center" style="margin-top: 1rem">
+          <ion-input required type="text" class="input-formulario" [(ngModel)]="rut" (ionChange)="rutFormat()" id="inputRut"
+            pattern="^((\d{1,2}(\.\d{1,3}){2})|\d{7,8})(-[\dkK])$" placeholder="Ingrese su rut" maxlength="12">
+          </ion-input>
+        </div>
+
+        <div style="margin-bottom:1rem;margin-top: 1rem;">
+          <ion-input required [type]="statePassword" id="password1" class="input-formulario" [(ngModel)]="password" placeholder="Contraseña">
+          </ion-input>
+        </div>
+
+        <div style="margin-left: 1rem;">
+          <ion-checkbox [(ngModel)]="recordPassword"></ion-checkbox>
+          <ion-label class="colorTittle">Recordar
+            contraseña</ion-label>
+        </div>
+
+        <div>
+          <ion-label class="labelRecuperarRight">Recuperar contraseña</ion-label>
+        </div>
+
+        <div>
+          <ion-button expand="block" (click)="signIn()">Ingresar</ion-button>
+        </div>
+
+        <div>
+          <ion-label class="labelRecuperarRight" style="margin-top: 2rem;">Registrate aqui</ion-label>
+        </div>
+
+        <div>
+          <ion-button expand="block" fill="outline" class="btnPago btnColor" >Pago Rapido
+            1-2-3</ion-button>
+        </div>
+
+      </ion-col>
+    </ion-row>
+
+  </div>
+</ion-app>
