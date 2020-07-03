@@ -66,8 +66,4 @@ export class LoginPage implements OnInit {
       // });
     }
   }
-
-  goApi(){
-    this.router.navigate(['/api']);
-  }
 }

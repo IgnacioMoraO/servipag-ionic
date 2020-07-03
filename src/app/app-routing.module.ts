@@ -16,10 +16,6 @@ const routes: Routes = [
     loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
   },
   {
-    path: 'api',
-    loadChildren: () => import('./api/api.module').then( m => m.ApiPageModule)
-  },
-  {
     path: 'empresas',
     loadChildren: () => import('./pages/empresas/empresas.module').then( m => m.EmpresasPageModule)
   },
