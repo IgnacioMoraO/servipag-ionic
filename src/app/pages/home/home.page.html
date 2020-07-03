@@ -1,33 +1,37 @@
 <app-header></app-header>
+<ion-content>
+  <ion-list>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle style="color: #11c1e0;">Hola</ion-card-subtitle>
+        <ion-card-title class="titleCard">Selecciona tus cuentas a pagar</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+  </ion-list>
 
-<ion-list>
-  <ion-card>
-    <ion-card-header>
-      <ion-card-subtitle style="color: #11c1e0;">Hola</ion-card-subtitle>
-      <ion-card-title class="titleCard">Selecciona tus cuentas a pagar</ion-card-title>
-    </ion-card-header>
-  </ion-card>
-</ion-list>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button class="btnAgregar">Agregar</ion-button>
+      </ion-col>
+    </ion-row>
 
+    <ion-row>
+      <ion-toolbar style="padding: 1rem;">
+        <ion-buttons slot="start">
+          <ion-checkbox></ion-checkbox>
+          <ion-label class="label-color">Seleccionar todo</ion-label>
+        </ion-buttons>
 
-<div>
-<ion-button expand="block" class="btnAgregar">Agregar</ion-button>
-</div>
-
-
-<div>
-  <span style="margin-left: 1rem;">
-  <ion-checkbox style="margin-bottom: -8px;"></ion-checkbox>
-  <ion-label style="margin-left: 1rem;font-size:small">Seleccionar todo</ion-label>
-  </span>
-
-  <span style="margin-right: 1rem;float: right;">
-    <ion-label style="font-size:small; margin-right: 1rem;">Ordenar</ion-label>
-  <ion-icon name="options-outline" class="ordenar"></ion-icon>
-  </span>
-</div>
-
-<ion-list>
+        <ion-buttons slot="end">
+          <ion-label class="label-color">Ordenar</ion-label>
+          <ion-icon name="options-outline" ></ion-icon>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-row>
+  </ion-grid>
+    
+  <ion-list>
     <ion-card style="height: 4.5rem;">
       <ion-checkbox style="margin-bottom: 5px;margin-left: 1.5rem;"></ion-checkbox>
       <ion-img src="assets/icon/vespucioSur.png" id="img-logoSur" class="ion-align-self-center"></ion-img>
@@ -40,7 +44,9 @@
         </ion-label>
       </div>
     </ion-card>
-</ion-list>
+  </ion-list>
 
 
-<ion-button expand="block" id="center-button" style="margin-bottom: 5rem;" (click)="goToAutopistasPage()">Buscar boletas</ion-button>
+  <ion-button expand="block" id="center-button" style="margin-bottom: 5rem;" (click)="goToAutopistasPage()">Buscar
+    boletas</ion-button>
+</ion-content

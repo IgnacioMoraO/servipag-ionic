@@ -66,4 +66,8 @@ export class LoginPage implements OnInit {
       // });
     }
   }
+
+  goToEmpresas() {
+    this.router.navigate(['/empresas']);
+  }
 }

@@ -1,7 +1,7 @@
-#center-button{
-    margin:auto;
+#center-button {
+    margin: auto;
     width: 90%;
-    margin-top: 65%;
+    margin-top: 90%;
 }
 
 #img-logoSur {
@@ -9,20 +9,18 @@
     display: inline-flex;
     margin-left: 2rem;
     margin-top: 17px;
-  }
-.titleCard{
+}
+.titleCard {
     font-size: small;
     font-weight: 400;
 }
 
-.btnAgregar{
+.btnAgregar {
     float: right;
-    width: 7rem;
     margin-right: 1rem;
-    margin-bottom: 1rem;
 }
 
-.ordenar{
+.ordenar {
     margin-bottom: -4px;
     margin-top: 6px;
 }
@@ -40,4 +38,9 @@
     display: flex;
     margin-top: -1rem;
     font-size: smaller;
+}
+
+.label-color {
+    margin: 0 0.5rem 0 0.5rem;
+    color: #11c1e0;
 }
