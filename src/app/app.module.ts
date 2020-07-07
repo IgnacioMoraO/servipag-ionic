@@ -12,8 +12,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { ServiceModule } from './@core/services/services.module';
 import { UtilsModule } from 'src/app/@core/utils/utils.module';
 
+import { LoadingScreenComponent } from './components/loading-screen/loading-screen.component';
+
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, LoadingScreenComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, ServiceModule, UtilsModule],
   providers: [

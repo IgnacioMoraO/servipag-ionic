@@ -10,12 +10,18 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
   styleUrls: ['app.component.scss']
 })
 export class AppComponent {
+
+  loadingScreen = true;
+
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,
     private statusBar: StatusBar
   ) {
-    this.initializeApp();
+    setTimeout(() => {
+      this.loadingScreen = false;
+      this.initializeApp();
+    }, 3000);
   }
 
   initializeApp() {
